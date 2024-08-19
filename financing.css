@@ -1,0 +1,156 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Dark grey text */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header nav ul li a.active {
+  border-bottom: 2px solid #007BFF; /* Blue underline for active link */
+}
+
+header nav ul li a:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Financing Section Styles */
+.financing-section {
+  margin-top: 40px;
+  padding: 30px;
+  background: #fff; /* White background */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.financing-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333; /* Dark grey text */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.financing-section p {
+  line-height: 1.8;
+  color: #666; /* Medium grey text */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.finance-option {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light grey background */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.finance-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.finance-option h2 {
+  margin-bottom: 10px;
+  color: #333; /* Dark grey text */
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.finance-option p {
+  margin-bottom: 15px;
+  color: #666; /* Medium grey text */
+}
+
+.finance-option ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  color: #666; /* Medium grey text */
+}
+
+.finance-option ul li {
+  margin-bottom: 10px;
+}
+
+.finance-option a {
+  color: #007BFF; /* Blue link */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.finance-option a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #111; /* Dark grey background */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+footer p a:hover {
+  text-decoration: none;
+  color: #ccc; /* Light grey on hover */
+}

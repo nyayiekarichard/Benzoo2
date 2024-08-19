@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 0 0 20px 20px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+header nav img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  align-self: flex-start;
+  position: relative;
+  right: 400px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  right: 180px;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Adjusted margin to prevent content overlap */
+.products {
+  padding: 20px 0;
+  background: #f8f8f8;
+  margin-top: 200px; /* Adjust this value based on the actual height of the header */
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-item {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  flex: 1 1 calc(25% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: box-shadow 0.3s;
+}
+
+.product-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+  max-width: 100%;
+  border-bottom: 1px solid #000;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.product-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.product-item p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.product-item button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product-item button:hover {
+  background-color: #333;
+}
+
+/* Tag styling */
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tag.available {
+  background-color: #28a745; /* Green color for Available */
+}
+
+.tag.sold {
+  background-color: #dc3545; /* Red color for Sold */
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}

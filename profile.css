@@ -1,0 +1,158 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+header nav img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  align-self: flex-start;
+  position: relative;
+  right: 400px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  right: 180px;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* CRUD Section Styles */
+.crud-section {
+    margin-top: 20px;
+}
+
+.crud-section h2, .crud-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.crud-section form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+}
+
+.crud-section form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.crud-section form input[type="text"],
+.crud-section form input[type="number"],
+.crud-section form select,
+.crud-section form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.crud-section form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.crud-section form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+#car-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#car-list th, #car-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#car-list th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#car-list td img {
+    width: 100px;
+    height: auto;
+}
+
+#car-list button {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#car-list button:hover {
+    background-color: #ddd;
+}

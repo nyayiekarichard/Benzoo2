@@ -1,0 +1,229 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0; 
+  position: fixed;
+  top: 0px;
+  width: 99.5%;
+  border-radius: 20px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+header nav img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  align-self: flex-start; 
+  position: relative;
+  right: 400px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  right: 180px;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Hero section styles */
+.hero {
+  background: url('https://i.pinimg.com/564x/c8/6e/e8/c86ee80408098994c294c5d3353ce72c.jpg') no-repeat center center/cover;
+  color: black;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.hero .btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background-color: #333;
+}
+
+.search-bar {
+  padding: 20px 0;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 20px;
+  width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #333;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.search-input, .price-input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Featured section styles */
+.featured {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.featured h2 {
+  margin-bottom: 20px;
+}
+
+.car-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.car {
+  width: 1200px;
+  margin-bottom: 20px;
+}
+
+.car img {
+  width: 100%;
+  height: auto;
+}
+
+.car h3 {
+  margin: 10px 0;
+}
+
+.car p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Contact info section styles */
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+/* Footer styles */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}

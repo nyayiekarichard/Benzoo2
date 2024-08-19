@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benz's By Richie - Manage Car Listings</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="/Assets/2.png" alt="logo">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="products.html">Cars for Sale</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="financing.html">Financing</a></li>
+                    <li><a href="profile.html">Sell Your Car</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <main>
+        <div class="container">
+            <section class="crud-section">
+                <h2>Manage Car Listings</h2>
+                
+                <!-- Create Form -->
+                <h3>Add New Car</h3>
+                <form id="create-car-form">
+                    <label for="car-make">Car Make:</label>
+                    <input type="text" id="car-make" name="car-make" required>
+
+                    <label for="car-model">Car Model:</label>
+                    <input type="text" id="car-model" name="car-model" required>
+
+                    <label for="car-year">Year:</label>
+                    <input type="number" id="car-year" name="car-year" min="1886" max="2024" required>
+
+                    <label for="car-price">Price ($):</label>
+                    <input type="number" id="car-price" name="car-price" required>
+
+                    <label for="accident-history">Accident History:</label>
+                    <select id="accident-history" name="accident-history" required>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+
+                    <label for="car-image">Car Image:</label>
+                    <input type="file" id="car-image" name="car-image" accept="image/*" required>
+
+                    <input type="submit" value="Add Car">
+                </form>
+
+                <!-- Read: Car List -->
+                <h3>Car Listings</h3>
+                <table id="car-list">
+                    <thead>
+                        <tr>
+                            <th>Make</th>
+                            <th>Model</th>
+                            <th>Year</th>
+                            <th>Price</th>
+                            <th>Accident History</th>
+                            <th>Image</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Car rows will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Benz's By Richie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

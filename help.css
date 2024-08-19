@@ -1,0 +1,169 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Dark grey text */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header styles (unchanged) */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+header nav img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  align-self: flex-start;
+  position: relative;
+  right: 400px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  right: 180px;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Help Section Styles */
+.help-section {
+  margin-top: 40px;
+  padding: 30px;
+  background: #fff; /* White background */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft black shadow */
+}
+
+.help-section h1, .help-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark grey text */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.help-section h1::after, .help-section h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #333; /* Dark grey underline */
+  margin: 10px auto;
+}
+
+.help-section p {
+  line-height: 1.8;
+  color: #666; /* Medium grey text */
+  text-align: center;
+}
+
+.help-section .faq {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f9f9f9; /* Very light grey for contrast */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.help-section .faq:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.help-section .faq h3 {
+  margin-bottom: 10px;
+  color: #333; /* Dark grey text */
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.help-section .faq p {
+  margin-left: 20px;
+  color: #666; /* Medium grey text */
+}
+
+.help-section .faq a {
+  color: #007BFF; /* Blue link */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.help-section .faq a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Footer styles (unchanged) */
+footer {
+  background-color: #111; /* Slightly lighter black */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+footer p a:hover {
+  text-decoration: none;
+  color: #ccc; /* Light grey on hover */
+}
