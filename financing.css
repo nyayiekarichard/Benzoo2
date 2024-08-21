@@ -17,13 +17,40 @@ body {
 header {
   background-color: #000;
   color: #fff;
-  padding: 10px 0;
+  padding: 10px 0; 
+  position: fixed;
+  top: 5%;
+  width: 94%;
+  border-radius: 50px;
+  margin-left: 3%;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
 }
 
 header nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  margin-left: auto;
+}
+
+header nav img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  align-self: flex-start; 
+  position: relative;
+  right: 400px;
 }
 
 header nav ul {
@@ -31,36 +58,39 @@ header nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+  align-items: flex-end;
+  position: relative;
+  right: 180px;
 }
 
 header nav ul li {
-  margin-left: 20px;
+  margin: 0 10px;
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-header nav ul li a.active {
-  border-bottom: 2px solid #007BFF; /* Blue underline for active link */
-}
-
-header nav ul li a:hover {
+nav ul li a:hover {
   background: #fff;
   color: #000;
   border-radius: 5px;
 }
 
 /* Financing Section Styles */
+.finance-container{
+  
+  margin-top: 200px;
+}
 .financing-section {
-  margin-top: 40px;
+  margin-top: 300px; /* Adjusted to provide space below the fixed header */
   padding: 30px;
   background: #fff; /* White background */
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 5%;
 }
 
 .financing-section h1 {
@@ -125,6 +155,7 @@ header nav ul li a:hover {
 .finance-option a:hover {
   color: #0056b3; /* Darker blue on hover */
   text-decoration: underline;
+  z-index: 0;
 }
 
 /* Footer styles */
@@ -153,4 +184,5 @@ footer p a {
 footer p a:hover {
   text-decoration: none;
   color: #ccc; /* Light grey on hover */
+  background-color: #000;
 }
