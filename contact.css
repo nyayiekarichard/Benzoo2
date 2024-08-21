@@ -1,77 +1,183 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 0; 
-    position: fixed;
-    top: 5%;
-    width: 94%;
-    border-radius: 50px;
-    margin-left: 3%;
-    z-index: 100;
-  }
-  header .container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; 
-  }
-  
-  header h1 {
-    margin: 0;
-    flex: 1;
-    text-align: center;
-  }
-  
-  header nav {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-  }
-  
-  header nav img {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-    align-self: flex-start; 
-    position: relative;
-    right: 400px;
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    right: 180px;
-  }
-  
-  header nav ul li {
-    margin: 0 10px;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    background: #fff;
-    color: #000;
-    border-radius: 5px;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Dark grey text */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 5%;
+  width: 94%;
+  border-radius: 50px;
+  margin-left: 3%;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+header nav img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  align-self: flex-start;
+  position: relative;
+  right: 400px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  right: 180px;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* Contact Section Styles */
+.contact-container{
+  margin-top: 200px;
+}
+.contact-section {
+  margin-top: 200px;
+  padding: 30px;
+  background: #fff; /* White background */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 5%;
+}
+
+.contact-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333; /* Dark grey text */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.contact-section p {
+  line-height: 1.8;
+  color: #666; /* Medium grey text */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-section ul li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Dark grey text */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #0d0d0e; /* Blue button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer styles */
+footer {
+  background-color: #111; /* Dark grey background */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+footer p a:hover {
+  text-decoration: none;
+  color: #ccc; /* Light grey on hover */
+  background-color: #000;
+}
