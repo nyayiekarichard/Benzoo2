@@ -1,4 +1,4 @@
-
+/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11,22 +11,23 @@ body {
   margin: 0 auto;
 }
 
-
+/* Header styles */
 header {
   background-color: #000;
   color: #fff;
-  padding: 10px 0; 
+  padding: 10px 0;
   position: fixed;
   top: 5%;
   width: 94%;
   border-radius: 50px;
   margin-left: 3%;
+  z-index: 100;
 }
 
 header .container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 header h1 {
@@ -45,7 +46,7 @@ header nav img {
   width: 100px;
   height: auto;
   margin-right: 20px;
-  align-self: flex-start; 
+  align-self: flex-start;
   position: relative;
   right: 400px;
 }
@@ -76,20 +77,43 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
 /* Hero section styles */
 .hero {
   background: url('https://i.pinimg.com/564x/c8/6e/e8/c86ee80408098994c294c5d3353ce72c.jpg') no-repeat center center/cover;
   color: black;
-  height: 1000px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 .hero h2 {
-  margin: 0;
   font-size: 2.5em;
 }
 
@@ -111,105 +135,111 @@ nav ul li a:hover {
   background-color: #333;
 }
 
+/* Search Bar and Budget Filter styles */
 .search-bar {
   padding: 20px 0;
-  background-color: #f1f1f1;
   text-align: center;
 }
 
-.search-bar input[type="text"] {
-  padding: 20px;
-  width: 600px;
+.search-input {
+  padding: 10px;
+  width: 50%;
+  margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-right: 10px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.search-bar button {
+.budget-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.budget-btn {
   padding: 10px 20px;
   background-color: #000;
   color: #fff;
   border: none;
   border-radius: 5px;
+  margin: 5px;
   cursor: pointer;
 }
 
-.search-bar button:hover {
+.budget-btn:hover {
   background-color: #333;
-}
-
-.search-bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.search-input, .price-input {
-  padding: 10px;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-.search-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.search-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
 }
 
 /* Featured section styles */
 .featured {
-  padding: 50px 0;
-  text-align: center;
+  padding: 40px 0;
+  background-color: #f5f5f5;
 }
 
 .featured h2 {
+  text-align: center;
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-.car-grid {
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  transition: transform 0.5s ease;
 }
 
-.car {
-  width: 1200px;
-  margin-bottom: 20px;
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-.car img {
+.carousel-item img {
   width: 100%;
-  height: auto;
+  max-height: 400px;
+  object-fit: cover;
 }
 
-.car h3 {
-  margin: 10px 0;
+.carousel-item h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
 }
 
-.car p {
+.carousel-item p {
   font-size: 1.1em;
   color: #333;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
 /* Contact info section styles */
 .contact-info {
-  background-color: #f9f9f9;
-  padding: 50px 0;
+  padding: 40px 0;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 .contact-info h2 {
@@ -227,4 +257,95 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header nav ul {
+      display: none;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .hero h2 {
+      font-size: 2em;
+  }
+
+  .hero p {
+      font-size: 1em;
+  }
+
+  .search-input {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .budget-filter {
+      flex-direction: column;
+  }
+
+  .carousel-item img {
+      max-height: 250px;
+  }
+
+  header nav img {
+      position: relative;
+      right: 0;
+      margin-right: 10px;
+  }
+
+  header nav ul {
+      position: relative;
+      right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      height: 400px;
+  }
+
+  .hero h2 {
+      font-size: 1.8em;
+  }
+
+  .hero p {
+      font-size: 0.9em;
+  }
+
+  .hero .btn {
+      padding: 8px 15px;
+      font-size: 0.9em;
+  }
+
+  .search-input {
+      width: 100%;
+  }
+
+  .carousel-item img {
+      max-height: 200px;
+  }
+
+  .carousel-item h3 {
+      font-size: 1.3em;
+  }
+
+  .carousel-item p {
+      font-size: 1em;
+  }
+  
+  .contact-info h2 {
+      font-size: 1.8em;
+  }
+
+  .contact-info p {
+      font-size: 1em;
+  }
+  
+  .budget-btn {
+      padding: 8px 15px;
+      font-size: 0.9em;
+  }
 }

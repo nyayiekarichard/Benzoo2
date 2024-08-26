@@ -11,7 +11,17 @@
         <div class="container">
             <nav>
                 <img src="Assets/2.png" alt="logo">
-                <ul>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="financing.html">Financing</a></li>
+                    <li><a href="profile.html">Sell Your Car</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+                <div class="hamburger">&#9776;</div>
+                <ul class="mobile-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -33,53 +43,57 @@
             </div>
         </section>
 
-        <!-- Search Bar Section -->
+        <!-- Search Bar and Budget Filter Section -->
         <section class="search-bar">
             <div class="container">
                 <input type="text" placeholder="Search vehicle by name" class="search-input">
-                <select class="price-filter">
-                    <option value="">Select Price Range</option>
-                    <option value="below-500k">Below 500k</option>
-                    <option value="500k-1M">500k - 1M</option>
-                    <option value="1M-2M">1M - 2M</option>
-                    <option value="2M-3M">2M - 3M</option>
-                    <option value="3M-5M">3M - 5M</option>
-                    <option value="5M-10M">5M - 10M</option>
-                    <option value="above-10M">Above 10M</option>
-                </select>
-                <button class="search-btn">Search</button>
-            </div>
-        </section>
-
-        <section class="featured">
-            <div class="container">
-                <h2>Featured Cars</h2>
-                <div class="car-grid">
-                    <div class="car">
-                        <img src="https://i.pinimg.com/736x/22/fb/78/22fb7858f90a79c917a4a2efae786ce1.jpg" alt="Mercedes-Benz GLE">
-                        <h3>Mercedes-Benz Model 1</h3>
-                        <p>Price: Ksh 10.5M</p>
-                    </div>
-                    <div class="car">
-                        <img src="https://i.pinimg.com/564x/42/3e/99/423e998884b603c3889822e8be6c8832.jpg" alt="Mercedes-Benz E63s">
-                        <h3>Mercedes-Benz Model 2</h3>
-                        <p>Price: 12.4M</p>
-                    </div>
-                    <div class="car">
-                        <img src="https://i.pinimg.com/564x/72/7c/5b/727c5b9b5e278848ceb2b417a46133f1.jpg" alt="Mercedes-Benz Model 3">
-                        <h3>2021 Mercedes-Benz S-Class Sedan</h3>
-                        <p>Price: Ksh 16,000,000</p>
-                    </div>
+                <div class="budget-filter">
+                    <button class="budget-btn">Below 500k</button>
+                    <button class="budget-btn">500k - 1M</button>
+                    <button class="budget-btn">1M - 2M</button>
+                    <button class="budget-btn">2M - 3M</button>
+                    <button class="budget-btn">3M - 5M</button>
+                    <button class="budget-btn">5M - 10M</button>
+                    <button class="budget-btn">Above 10M</button>
                 </div>
             </div>
         </section>
 
+        <!-- Featured Cars Section -->
+        <section class="featured">
+            <div class="container">
+                <h2>Featured Cars</h2>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/736x/22/fb/78/22fb7858f90a79c917a4a2efae786ce1.jpg" alt="Mercedes-Benz GLE">
+                            <h3>Mercedes-Benz Model 1</h3>
+                            <p>Price: Ksh 10.5M</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/564x/42/3e/99/423e998884b603c3889822e8be6c8832.jpg" alt="Mercedes-Benz E63s">
+                            <h3>Mercedes-Benz Model 2</h3>
+                            <p>Price: Ksh 12.4M</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/564x/72/7c/5b/727c5b9b5e278848ceb2b417a46133f1.jpg" alt="Mercedes-Benz S-Class">
+                            <h3>2021 Mercedes-Benz S-Class Sedan</h3>
+                            <p>Price: Ksh 16M</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev">&lt;</button>
+                    <button class="carousel-control-next">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
         <section class="contact-info">
             <div class="container">
                 <h2>Contact Us</h2>
                 <p>Phone: 0704823697</p>
                 <p>Email: info@mercedesdealership.com</p>
-                <p>Address:Nairobi, Kenya</p>
+                <p>Address: Nairobi, Kenya</p>
             </div>
         </section>
     </main>
@@ -89,5 +103,7 @@
             <p>&copy; 2024 Mercedes-Benz Dealership</p>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
