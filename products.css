@@ -98,11 +98,47 @@ nav ul li a:hover {
 .mobile-menu li {
   margin-bottom: 10px;
 }
+.search-bar {
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 200PX;
+}
+
+.search-input {
+  padding: 10px;
+  width: 50%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.budget-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin-top: 1000px; */
+}
+
+.budget-btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.budget-btn:hover {
+  background-color: #333;
+}
+
 /* Adjusted margin to prevent content overlap */
 .products {
   padding: 20px 0;
   background: #f8f8f8;
-  margin-top: 200px; /* Adjust this value based on the actual height of the header */
+  margin-top: 20px; /* Adjust this value based on the actual height of the header */
   
 }
 
