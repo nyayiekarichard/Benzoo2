@@ -58,3 +58,7 @@ function deleteCar(button) {
     const row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);
 }
+let nextbutton=document.querySelector(".nextbutton1")
+nextbutton.addEventListener("click",function(){
+    window.location.href="details.html"
+})

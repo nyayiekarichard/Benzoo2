@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="search1">
+        <input type="text" placeholder="Search vehicle by name" class="search-input">
+    </div>
+    <div class="items">
+
+    </div>
+
+</body>
+<script>
+    let allitems = [
+        {
+            name: "First car",
+            price: "100",
+        },
+
+        {
+            name: "Second car",
+            price: "200",
+        },
+
+        {
+            name: "Third car",
+            price: "300",
+        },
+
+        {
+            name: "Fourth car",
+            price: "400",
+        },
+
+        {
+            name: "Fifth car",
+            price: "500",
+        },
+    ];
+    let itemsElement = document.querySelector(".items");
+    function display(arrayofitems) {
+        let output = "";
+        for (let i = 0; i < arrayofitems.length; i++) {
+            output += `
+        <div>
+            <h3>${arrayofitems[i].name}</h3>
+            <p>Ksh${arrayofitems[i].price}
+            </div>`;
+        }
+        itemsElement.innerHTML = output;
+        
+    }
+    display(allitems);
+    let searchElement=document.querySelector(".search1")
+    searchElement.addEventListener("input",function(event){
+        // console.log(event.target.value)
+let searcheditems=[];
+for(let i=0; i<allitems.length;i++){
+    if(allitems[i].name.toLowerCase().startsWith(event.target.value.toLowerCase())){
+        searcheditems.push(allitems[i]);
+    }
+}
+display(searcheditems)
+    })
+</script>
+
+</html>
